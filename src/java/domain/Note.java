@@ -1,8 +1,9 @@
 
 package domain;
 
+import java.io.Serializable;
 
-public class Note {
+public class Note implements Serializable {
     
     String title;
     String contents;
@@ -13,8 +14,6 @@ public class Note {
         this.contents = "";
     }
     
-         
-
     public Note(String title, String contents) {
         this.title = title;
         this.contents = contents;
@@ -35,7 +34,6 @@ public class Note {
     public void setContents(String contents) {
         this.contents = contents;
     }
-    
     
     
 }
